@@ -1,0 +1,24 @@
+import numpy as np
+import tensorflow as tf
+
+w = tf.variable(0,dtype=tf.float32)
+cost = tf.add(tf.add(w**2,tf.multiply(-10,w),25))
+train = tf.train.gradientdescentoptimizer(0.01).minimize(cost)
+​
+init = tf.global_variables_initializer()
+session = tf.sesstion()
+session.run(init)
+print(session.run())
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-2-1e9169e81a45> in <module>()
+----> 1 w = tf.variable(0,dtype=tf.float32)
+      2 cost = tf.add(tf.add(w**2,tf.multiply(-10,w),25))
+      3 train = tf.train.gradientdescentoptimizer(0.01).minimize(cost)
+      4 
+      5 init = tf.global_variables_initializer()
+
+AttributeError: 'module' object has no attribute 'variable'
+
+
+既然import成功，却少属性的原因是，tf的新旧版本不同
