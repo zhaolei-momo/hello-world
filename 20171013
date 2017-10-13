@@ -22,3 +22,8 @@ AttributeError: 'module' object has no attribute 'variable'
 
 
 既然import成功，却少属性的原因是，tf的新旧版本不同
+
+////////////////////////////////////////////////////////////////////
+import tensorflow as tf
+print (tf.__version__)
+# print后面注意加空格
