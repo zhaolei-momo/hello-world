@@ -16,4 +16,6 @@ def run(main=None):
   main = main or sys.modules['__main__'].main  
   sys.exit(main(sys.argv)) 
 
-tf.app.run()处理flag解析，然后执行main函数
+  tf.app.run()处理flag解析，然后执行main函数
+  
+   4." // "来表示整数除法，返回不大于结果的一个最大的整数
