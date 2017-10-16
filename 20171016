@@ -1,0 +1,19 @@
+def main(argv=None):
+# ...
+
+if __name__ == '__main__':
+  tf.app.run()
+  
+   1. if __name__ == '__main__':
+   一个python的文件有两种使用的方法，第一是直接作为脚本执行，第二是import到其他的python脚本中被调用（模块重用）执行。因此if __name__ == 'main': 的作用就是控制这两种情况执行代码的过程，在if __name__ == 'main': 下的代码只有在第一种情况下（即文件作为脚本直接执行）才会被执行，而import到其他脚本中是不会被执行的。
+   2. 运行的原理
+   每个python模块（python文件，也就是此处的test.py和import_test.py）都包含内置的变量__name__,当运行模块被执行的时候，__name__等于文件名（包含了后缀.py）；如果import到其他模块中，则__name__等于模块名称（不包含后缀.py）。而“__main__”等于当前执行文件的名称（包含了后缀.py）。进而当模块被直接执行时，__name__ == 'main'结果为真。
+   
+   3. tf.app.run()
+def run(main=None):  
+  f = flags.FLAGS  
+  f._parse_flags()  
+  main = main or sys.modules['__main__'].main  
+  sys.exit(main(sys.argv)) 
+
+tf.app.run()处理flag解析，然后执行main函数
