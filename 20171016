@@ -19,3 +19,10 @@ def run(main=None):
   tf.app.run()处理flag解析，然后执行main函数
   
    4." // "来表示整数除法，返回不大于结果的一个最大的整数
+
+   5. %
+   求模运算，相当于mod，也就是计算除法的余数，比如5%3就得到2。
+   %还用在python的格式化输出，比如：
+   a = 'test'
+   print 'it is a %s' %(a)
+   打印的结果就是 it is a test
