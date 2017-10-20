@@ -1,0 +1,5 @@
+numpy.reshape(a, newshape, order='C')[source]，参数`newshape`是啥意思？
+ 根据Numpy文档(https://docs.scipy.org/doc/numpy/reference/generated/numpy.reshape.html#numpy-reshape)的解释：
+ 数组新的shape属性应该要与原来的配套，如果等于-1的话，那么Numpy会根据剩下的维度计算出数组的另外一个shape属性值。
+https://www.zhihu.com/question/52684594
+http://jingyan.baidu.com/article/cd4c2979cc8666756e6e60fb.html
