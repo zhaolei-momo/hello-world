@@ -8,3 +8,14 @@ int64 int32 float64 float32 区别
     Int16 值类型表示值介于 -32768 到 +32767 之间的有符号整数。
     Int32 值类型表示值介于 -2,147,483,648 到 +2,147,483,647 之间的有符号整数。
     Int64 值类型表示值介于 -9,223,372,036,854,775,808 到 +9,223,372,036,854,775,807 之间的整数。
+
+
+tf.truncated_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=None)
+    shape: 一维的张量，也是输出的张量。
+    mean: 正态分布的均值。
+    stddev: 正态分布的标准差。
+    dtype: 输出的类型。
+    seed: 一个整数，当设置之后，每次生成的随机数都一样。
+    name: 操作的名字
+    在tf.truncated_normal中如果x的取值在区间（μ-2σ，μ+2σ）之外则重新进行选择。这样保证了生成的值都在均值附近。
+    http://blog.csdn.net/u013713117/article/details/65446361
