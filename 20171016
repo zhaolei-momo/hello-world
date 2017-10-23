@@ -1,21 +1,23 @@
+```Python2
 def main(argv=None):
 # ...
 
 if __name__ == '__main__':
   tf.app.run()
-  
+```
    1. if __name__ == '__main__':
-   一个python的文件有两种使用的方法，第一是直接作为脚本执行，第二是import到其他的python脚本中被调用（模块重用）执行。因此if __name__ == 'main': 的作用就是控制这两种情况执行代码的过程，在if __name__ == 'main': 下的代码只有在第一种情况下（即文件作为脚本直接执行）才会被执行，而import到其他脚本中是不会被执行的。
+   >一个python的文件有两种使用的方法，第一是直接作为脚本执行，第二是import到其他的python脚本中被调用（模块重用）执行。因此if __name__ == 'main': 的作用就是控制这两种情况执行代码的过程，在if __name__ == 'main': 下的代码只有在第一种情况下（即文件作为脚本直接执行）才会被执行，而import到其他脚本中是不会被执行的。
    2. 运行的原理
-   每个python模块（python文件，也就是此处的test.py和import_test.py）都包含内置的变量__name__,当运行模块被执行的时候，__name__等于文件名（包含了后缀.py）；如果import到其他模块中，则__name__等于模块名称（不包含后缀.py）。而“__main__”等于当前执行文件的名称（包含了后缀.py）。进而当模块被直接执行时，__name__ == 'main'结果为真。
+   >每个python模块（python文件，也就是此处的test.py和import_test.py）都包含内置的变量__name__,当运行模块被执行的时候，__name__等于文件名（包含了后缀.py）；如果import到其他模块中，则__name__等于模块名称（不包含后缀.py）。而“__main__”等于当前执行文件的名称（包含了后缀.py）。进而当模块被直接执行时，__name__ == 'main'结果为真。
    
    3. tf.app.run()
+```python
 def run(main=None):  
   f = flags.FLAGS  
   f._parse_flags()  
   main = main or sys.modules['__main__'].main  
   sys.exit(main(sys.argv)) 
-
+```
   tf.app.run()处理flag解析，然后执行main函数
   
    4." // "来表示整数除法，返回不大于结果的一个最大的整数
@@ -29,14 +31,16 @@ def run(main=None):
    
    6.xrange与range的区别
    range 前面小节已经说明了，range([start,] stop[, step])，根据start与stop指定的范围以及step设定的步长，生成一个序列。
+```python
 >>> range(5) 
 [0, 1, 2, 3, 4] 
 >>> range(1,5) 
 [1, 2, 3, 4] 
 >>> range(0,6,2)
 [0, 2, 4]
-
+```
    xrange 用法与 range 完全相同，所不同的是生成的不是一个list对象，而是一个生成器。
+```python
 xrange(5)
 >>> list(xrange(5))
 [0, 1, 2, 3, 4]
@@ -48,5 +52,5 @@ xrange(1, 5)
 xrange(0, 6, 2)
 >>> list(xrange(0,6,2))
 [0, 2, 4]
-
+```
    
