@@ -7,7 +7,7 @@ for me to exciese on using the github, this is a new branch of the hello-world. 
 作者Scott Young, 用12个月完成麻省理工计算机系四年大学课程，目前已经完成了33门课中的13门。以下为译文。)
 原文：[How to Stay Focused (Without Extra Caffeine)How to Stay Focused (Without Extra Caffeine) « Scott H Young](https://www.scotthyoung.com/blog/2011/11/28/focus-without-caffeine/)
 
-## 如何能够在这么长的工作时间中保持专注呢？
+## [如何能够在这么长的工作时间中保持专注呢？](https://www.zhihu.com/question/20335415/answer/23353446 )
 为了确保进度，我需要每天学习10-12小时。而且还得专心，而不仅仅是时间长。当你在以两倍的播放速度看上课视频的时候，即使是短暂的开小差也会让你的进度脱轨。在这封邮件中，我将分享我用于保持专注的策略。这些策略都是有关（如何）激发你自然的动力循环的，所以你并不需要摄入更多咖啡因或非法兴奋剂。下面是我发现有效的几个关键点：  
 1. 启动效应
 2. 无干扰的休息
@@ -38,9 +38,3 @@ for me to exciese on using the github, this is a new branch of the hello-world. 
 我发现，如果你需要灵活性来经常变更每日任务计划，却又不想推迟工作时间的话，这是一种特别有用的办法。我在工作日使用固定日程的`既定界限`，同时结合我自己的以任务为核心的时间管理系统——`每周/每日目标法`。当我的工作可以很容易地被事先分解成为任务时，我喜欢仅仅采用每周/每日目标法。但是我发现，如果我事先无法知道自己将做些什么的话（当我打算几天就学完一门课的时候，往往如此），两种办法都用比较好。然而，`关键之处并不在于你采用哪种系统，而在于你将工作和生活清晰地分离开来。`  
 我见过总是陷入超时工作无法自拔的学生。他们没有意识到，这么做对他们的整体效率是多么大的损害。即使我一周学习65小时，以四倍的速度来学习一门课，我仍然确保自己的夜晚和周六是空闲的——没有例外。专注的关键不在于巨大的毅力或滥用药物，而在于使用你自己的心理与动机机制来完成更多事情。更重要的是，它意味着你需要有策略地使用休息和放假。这样，你就可以最大化自己的生产效率，而不是把自己弄得筋疲力尽。  
 >The key to focus isn’t enormous willpower or substance abuse, it’s manipulating your own psychology and motivation circuits to get more work done. Most importantly, it’s about being strategic with your breaks and time off so you maximize your productivity instead of burning out the fuel that sustains you.
-
-
->作者：song  
->链接：https://www.zhihu.com/question/20335415/answer/23353446  
->来源：知乎  
->著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。  
